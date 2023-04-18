@@ -1,58 +1,89 @@
 main {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
 }
 
 div {
+  display: inline-block;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+}
 
-    display: inline-block;
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: #00b0f0;
+}
+.green {
+  background-color: #00b050;
+}
+.yellow {
+  background-color: #ffff00;
+}
 
-    border: 1px solid black;
+/* media queries */
 
+/* Tamanhos de tela grandes */
+
+@media screen and (max-width: 2100px) {
+  div {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 1451px) {
+  div {
     width: 100px;
-
     height: 100px;
-
+  }
 }
 
+@media screen and (max-width: 1064px) {
+  div {
+    width: 70px;
+    height: 70px;
+  }
+}
 
+/* Tamanhos de tela médios */
+@media screen and (max-width: 1000px) {
+  div {
+    width: 60px;
+    height: 60px;
+  }
+}
 
-.red{
-    background-color: red;
+@media screen and (max-width: 800px) {
+  div {
+    width: 50px;
+    height: 50px;
+  }
 }
-.blue{
-    background-color:  #00b0f0;
+
+/* Tamanhos de tela pequenos */
+@media screen and (max-width: 700px) {
+  div {
+    width: 30px;
+    height: 30px;
+  }
 }
-.green{
-    background-color:#00b050;
+
+/* Tamanhos de tela muito pequenos */
+@media screen and (max-width: 500px) {
+  div {
+    width: 20px;
+    height: 20px;
+  }
 }
-.yellow{
-    background-color: #ffff00;
+
+/* Estilos adicionais */
+@media screen and (max-width: 400px) {
+  div {
+    border: 1px solid black;
+  }
 }
-#primeiro{
-    border-right: 4px solid black;
-    border-bottom: 4px solid black; 
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    
-    }
-#segundo{
-    border-right: 2px solid black;
-    border-bottom: 4px solid black; 
-    border-left: 4px solid black;
-    border-top: 2px solid black;
-    }
-#terceiro{
-    border-right: 4px solid black;
-    border-bottom: 2px solid black; 
-    border-left: 2px solid black;
-    border-top: 4px solid black;
-    }
-#quarto{
-    border-right: 2px solid black;
-    border-bottom: 2px solid black; 
-    border-left: 4px solid black;
-    border-top: 4px solid black;
-    }
